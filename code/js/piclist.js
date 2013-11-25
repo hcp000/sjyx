@@ -5,7 +5,7 @@ $(function(){
 	var timer = null;
 	var aSort = [];
 	var aPosition = [
-					{width:269,height:189,top:130,left:346,zIndex:10},
+					{width:322,height:226,top:111,left:306,zIndex:10},
 					{width:233,height:164,top:148,left:197,zIndex:8},
 					{width:193,height:136,top:164,left:90,zIndex:6},			
 					{width:193,height:136,top:164,left:677,zIndex:6},

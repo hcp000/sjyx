@@ -51,7 +51,7 @@ b.rtop b.r4, b.rbottom b.r4{margin: 0 1px;height: 2px}
 .wrap .wrap_c .main .main_b .nav_bg li.on{ height:8px; border-bottom:2px solid #fff;}
 
 .wrap .wrap_c .nav{ height:40px; line-height:40px; width:956px;}
-.wrap .wrap_c .nav li{ float:left; display:inline-block; width:20%; text-align:center;text-shadow:1px 1px rgba(0,0,0,.3);}
+.wrap .wrap_c .nav li{ float:left; display:inline-block; width:20%; text-align:center;text-shadow:1px 1px rgba(0,0,0,.3); font-size:15px;}
 .wrap .wrap_c .nav li a{}
 .wrap .wrap_c .footer{ text-align:right; color:#fff; font-size:10px; height:20px; line-height:20px; margin-top:20px;}
 
@@ -66,6 +66,27 @@ b.rtop b.r4, b.rbottom b.r4{margin: 0 1px;height: 2px}
 .wrap .wrap_c .main .content .switch li.no2{background:url(../images/imgbg2.jpg) no-repeat;}
 .wrap .wrap_c .main .content .switch li.no3{background:url(../images/imgbg3.jpg) no-repeat;}
 .wrap .wrap_c .main .content .switch li.no4{background:url(../images/imgbg4.jpg) no-repeat;}
+.wrap .wrap_c .main .content .switch li.on img{ display:block;}
+
+
+
+
+
+
+
+.wrap .wrap_c .main .content .switch2{ width:764px; float:left;}
+.wrap .wrap_c .main .content .switch2 li{ width:191px; float:left; height:453px; overflow:hidden;}
+.wrap .wrap_c .main .content .switch2 li img{ }
+
+
+
+
+
+
+
+
+
+
 
 .wrap .wrap_c .main .content .content_r{ width:764px; float:left; height:auto;  position:relative;}
 .wrap .wrap_c .main .content .content_r p{ font-family:"宋体"; font-size:12px; line-height:18px; color:#50666E; padding:0 60px;letter-spacing:6px;}
@@ -113,13 +134,12 @@ b.rtop b.r4, b.rbottom b.r4{margin: 0 1px;height: 2px}
 .wrap .wrap_c .main .content .content_r .piclist2 #next{ display:inline; cursor:pointer;}
 .wrap .wrap_c .main .content .content_r .piclist2 #titles{ height:30px; line-height:30px; text-align:center; margin-top:10px; font-size:14px; font-weight:normal;color:#50666E;}
 
-.wrap .wrap_c .main .buy{ width:65px; height:17px;background:url(../images/bg.gif) no-repeat 0 -102px; cursor:pointer;position:absolute; right:46px; bottom:43px; z-index:1999;}
+.wrap .wrap_c .main .buy{ width:46px; height:12px;background:url(../images/bg.gif) no-repeat -74px -107px; cursor:pointer;position:absolute; right:46px; bottom:43px; z-index:1999;}
 .wrap .wrap_c .main .buylayer{ position:absolute; width:665px; height:395px; margin:-170px 0 0 -333px; z-index:999; left:50%; top:50%; background-color:#C8C6BA; text-align:center; display:none;}
 .wrap .wrap_c .main .buylayer h2{height:60px; text-align:left; line-height:60px; padding-left:55px; margin-top:18px;font-family:"宋体"; font-size:14px;color:#50666E; font-weight:normal;letter-spacing:6px;}
 .wrap .wrap_c .main .buylayer .pxkcimg{display:block; margin:0 auto 0 auto;background:url(../images/pxkc.jpg) no-repeat center center; width:100%; height:109px;}
 .wrap .wrap_c .main .buylayer p{margin-top:20px;letter-spacing:6px; padding:0 55px; text-align:left; line-height:28px !important;}
 .wrap .wrap_c .main .buylayer .buyclose{letter-spacing:6px; color:#fff; font-weight:bold; font-weight:bold; position:absolute; top:15px; right:20px; cursor:pointer;}
-
 
 .pxkc{ text-align:center;width:764px;}
 .pxkc h2{ height:45px; text-align:left; line-height:45px; padding-left:60px; margin-top:70px;font-family:"宋体"; font-size:14px;color:#50666E; font-weight:normal;letter-spacing:6px;}
@@ -131,7 +151,7 @@ b.rtop b.r4, b.rbottom b.r4{margin: 0 1px;height: 2px}
 
 
 .piclist3{width:956px;height:453px;position:absolute;top:0;left:0; z-index:999; background-color:#D3D3CB;}
-.piclist3 .pic{ text-align:center; width:500px; height:260px; padding-bottom:15px; overflow:hidden; margin:50px auto 0 auto;}
+.piclist3 .pic{ text-align:center; width:500px; height:260px; padding-bottom:15px; overflow:hidden; margin:85px auto 0 auto;}
 .piclist3 .pic img{ margin:0 auto; display:block; height:100%; max-height:280px; max-width:700px;box-shadow:-5px 7px 15px -5px #666;-moz-box-shadow:-5px 7px 15px -5px #666;-webkit-box-shadow:-5px 7px 15px -5px #666;}
 .piclist3 .picpn{ height:38px; line-height:38px; text-align:center;font-size:12px;  color:#50666E; margin-top:12px;}
 .piclist3 #prev{ display:inline; cursor:pointer; font-weight:bold; color:#fff; margin:0 12px;}
@@ -139,9 +159,17 @@ b.rtop b.r4, b.rbottom b.r4{margin: 0 1px;height: 2px}
 .piclist3 .picpn .num span{ display:inline; margin:0 8px; cursor:pointer;}
 .piclist3 .picpn .num span.on{ color:#fff; cursor:default;}
 .piclist3 #next{ display:inline; cursor:pointer; font-weight:bold; color:#fff; margin:0 12px;}
-.piclist3 #titles{ height:30px; line-height:30px; text-align:center; margin-top:30px; font-size:14px; font-weight:normal;color:#50666E;}
+.piclist3 #titles{ height:20px; line-height:20px; text-align:center; margin:0 auto 0 auto; font-size:14px; font-weight:normal;color:#50666E; width:370px; font-size:10px; text-align:right;}
 
+.piclist3 .picpn2 #prev{ width:47px; height:82px; position:absolute; top:204px; left:135px;background:url(../images/bg.gif) no-repeat 0 -127px; text-indent:-9999px; display:block !important;}
+.piclist3 .picpn2 #next{ width:50px; height:86px; position:absolute; top:204px; right:139px;background:url(../images/bg.gif) no-repeat -56px -126px; text-indent:-9999px;display:block !important;}
 
+.wrap .wrap_c .main .buylayer2{ position:absolute; width:332px; height:222px; margin:-123px 0 0 -166px; z-index:999; left:50%; top:50%; 
 
+background:#fff;filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#88ffffff,endcolorstr=#88ffffff,gradientType=0);
+background: -moz-linear-gradient(top, rgba(255,255,255,0.7), rgba(255,255,255,0.7));background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,0.7)), to(rgba(255,255,255,0.7)));
+ text-align:center; display:none;}
+ .wrap .wrap_c .main .mtop{margin:-133px 0 0 -166px !important;}
 
-
+.wrap .wrap_c .main .buylayer2 p{margin-top:20px; padding:0 55px !important; letter-spacing:0 !important; text-align:left; line-height:18px !important; color:#666; font-size:10px;}
+.wrap .wrap_c .main .buylayer2 .buyclose{color:#fff;  position:absolute; top:15px; right:20px; cursor:pointer; font-size:10px;color:#666;}
