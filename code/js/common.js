@@ -17,7 +17,7 @@ var wrap={
 		var randomNum=Math.floor(Math.random()*4+0);
 		$(".switch li").eq(randomNum).addClass("on");
 		
-		var $flash='<embed type="application/x-shockwave-flash" src="sj.swf" width="192" height="453" allowfullscreen="true" allowscriptaccess="always" wmode="transparent">';
+		var $flash='<embed type="application/x-shockwave-flash" src="../js/sj.swf" width="192" height="453" allowfullscreen="true" allowscriptaccess="always" wmode="transparent">';
 		var $span="<span class='icon'></span>";
 		var isIE = !-[1,];
 		if(isIE){
