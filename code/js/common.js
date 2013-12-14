@@ -67,6 +67,8 @@ $(".switch li").hover(function(){
 	
 });
 
+var imgindex=Math.floor(Math.random()*($(".switch2 li#no1 img").length));
+$(".switch2 li#no1 img").eq(imgindex).show();
 
 var onHtml=$(".switch2 li.on").html();
 var switch2=[];
