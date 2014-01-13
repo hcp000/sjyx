@@ -16,43 +16,21 @@ var wrap={
 		this.$layer.height($(document).height());
 		var randomNum=Math.floor(Math.random()*4+0);
 		$(".switch li").eq(randomNum).addClass("on");
+
+	},
+	addFlash:function(){
+	
+		var $flash='<embed src="../js/sj.swf" allowFullScreen="true" quality="high" width="192" height="453" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" wmode="transparent"></embed>';
 		
-		var $flash='<embed type="application/x-shockwave-flash" src="../js/sj.swf" width="192" height="453" allowfullscreen="true" allowscriptaccess="always" wmode="transparent">';
 		var $span="<span class='icon'></span>";
-		var isIE = !-[1,];
-		if(isIE){
-			try{
-				var swf1 = new ActiveXObject('ShockwaveFlash.ShockwaveFlash');
-				$(".content .content_l").html($flash);
-			}
-			catch(e){
-				$(".content .content_l").html($span);
-			}
-		}
-		else {
-			try{
-				var swf2 = navigator.plugins['Shockwave Flash'];
-				if(swf2 == undefined){
-					$(".content .content_l").html($span);
-				}
-				else {
-					$(".content .content_l").html($flash);
-				}
-			}
-			catch(e){
-				$(".content .content_l").html($span);
-			}
-		}
-		
-		
-		
+		$(".content .content_l").html($flash);
 		
 	}
 
 };
 
 wrap.init();
-	
+wrap.addFlash();
 $(window).resize(function(){
 	wrap.init();
 });	
@@ -157,9 +135,15 @@ $(".buy").click(function(){
 	
 });
 
+$(".bgcbox .buyclose").click(function(){
+	$(".bgcbox").hide();
+	
+});
 
-
-
+$(".bgc").click(function(){
+	$(".bgcbox").show();
+	
+});
 
 
 
