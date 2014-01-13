@@ -83,28 +83,29 @@ $(".paging1 li").click(function(){
 	var index=$(".paging1 li").index(this);
 	$(".paging1 li").removeClass("on");
 	$(".paging1 li").eq(index).addClass("on");
-	$("#p0,#p1,#p2").hide();
+	$("#p0,#p1,#p2,#p3").hide();
 	$("#p"+index).show();
 	
 });
 
 $(".next").click(function(){
 	var n=$(".paging1 li").index($(".paging1 li.on"));
-	if(n<2)
+	var limit = $(".paging1 li").length - 1;
+	if(n<limit)
 	{
 		n++;
 		$(".paging1 li").removeClass("on");
 		$(".paging1 li").eq(n).addClass("on");
-		$("#p0,#p1,#p2").hide();	
+		$("#p0,#p1,#p2,#p3").hide();
 		$("#p"+n).show();
 		
 	}
-	else if(n==2)
+	else if(n==limit)
 	{
 		$(".paging1 li").removeClass("on");
 		$(".paging1 li").eq(0).addClass("on");
-		$("#p0,#p1,#p2").hide();	
-		$("#p0").show();		
+		$("#p0,#p1,#p2,#p3").hide();
+		$("#p0").show();
 	}
 
 });
@@ -126,38 +127,21 @@ $(".buylayer .buyclose").click(function(){
 
 $(".buylayer2 .buyclose").click(function(){
 	$(".buylayer2").hide();
-	
 });
 
 $(".buy").click(function(){
-	
 	$(".buylayer2").show();
-	
 });
 
 $(".bgcbox .buyclose").click(function(){
 	$(".bgcbox").hide();
-	
+	$(".paging1").show();
 });
 
 $(".bgc").click(function(){
 	$(".bgcbox").show();
-	
+	$(".paging1").hide();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
 });
 
 

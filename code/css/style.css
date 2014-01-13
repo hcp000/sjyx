@@ -97,6 +97,7 @@ b.rtop b.r4, b.rbottom b.r4{margin: 0 1px;height: 2px}
 
 .wrap .wrap_c .main .content .content_r3 p{ font-family:"宋体"; font-size:12px; line-height:18px; color:#50666E; padding:0 60px;letter-spacing:6px;}
 .wrap .wrap_c .main .content .content_r3 .p1{ margin-top:80px;}
+.wrap .wrap_c .main .content .content_r3 .p2{ margin-top:80px;}
 .wrap .wrap_c .main .content  p a.bgc,.wrap .wrap_c .main .content  p a.bgc:hover{ color:#fff !important;}
 
 .piclist{ position:absolute; top:0; left:0; width:956px;height:453px; background-color:#D3D3CB;}
@@ -199,3 +200,9 @@ background: -moz-linear-gradient(top, rgba(255,255,255,0.7), rgba(255,255,255,1)
 .wrap .bgcbox table tr td.t1{ background-color:#BEBEC0; height:28px; line-height:28px; color:#2d2d2d;}
 .wrap .bgcbox table tr .bttom{ background-color:#E2E2E2; color:#54605F; height:48px; line-height:48px;}
 .wrap .bgcbox .buyclose{color:#fff;  position:absolute; top:15px; right:20px; cursor:pointer; font-size:10px;color:#666; position:absolute; right:3px; top:3px;}
+
+
+.content_r3 .p2-table { text-align:center; font-size:12px;}
+.content_r3 .p2-table tr th{ height:70px; background-color:#C8C2B6; color:#54605F;}
+.content_r3 .p2-table tr td{ color:#50656D;}
+.content_r3 .p2-table tr td.t1{ background-color:#BEBEC0; height:28px; line-height:28px; color:#2d2d2d;}

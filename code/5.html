@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>艺术书籍</title>
+<link rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/piclist.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <div class="wrap_t">
+        <div class="wrap_line"></div>
+        <div class="topnav"><p><a href="">官方微博</a>|<a href="">FAQ</a>|<a href="">联系我们</a></p><b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b></div>
+    </div>
+    <div class="wrap_c">
+        <div class="logo"></div>
+        <div class="line"><span></span><em></em></div>
+        <div class="main">
+            <div class="content">
+                <div class="content_l"><span class="icon"></span></div>
+                <div class="content_r">
+                </div>
+                <div class="piclist3">
+                    <div class="pic"><img id="pic" src=""  /></div>                        
+                    <h2 id="titles"></h2>
+                    <div class="picpn picpn2"><span id="prev">上一页</span><p class="num"></p><span id="next">下一页</span></div>
+                </div>
+                <script type="text/javascript">
+                    var num="";
+                    var pics = [];    
+                    pics[0] = "images/Landscape_121.jpg";
+                    pics[1] = "images/Landscape_122.jpg"; 
+                    pics[2] = "images/Landscape_125.jpg"; 
+                    pics[3] = "images/Landscape_128.jpg";
+                    pics[4] = "images/Landscape_129.jpg";
+                    var title = []; 
+                    title[0]="说服对方"; 
+                    title[1]="第三方";  
+                    title[2]="东方红"; 
+                    title[3]="电风扇而";  
+                    title[4]="个头儿哥恶搞";  
+
+                    function picinit(e){
+                        $("#pic").attr("src",pics[e]);
+                        $("#titles").html(title[e]);
+                        $(".piclist3 .num span").removeClass("on");
+                        $(".piclist3 .num span").eq(e).addClass("on");
+                        $("#prev,#next").show();
+                        if(e==0)
+                        {
+                            
+                            $("#prev").hide();
+                        }
+                        if(e==pics.length-1)
+                        {
+                            
+                            $("#next").hide();    
+                        }
+
+                    }
+
+                    for (i=0;i<pics.length;i=i+1) 
+                    {
+                        var j=i+1;
+                        num=$(".piclist3 .num").html()+"<span>"+j+"</span>";
+                       $(".piclist3 .num").html(num);
+                    }
+
+                    picinit(0);    
+                                            
+                    $("#prev").click(function(){
+                        var index=$(".piclist3 .num span").index($(".piclist3 .num span.on"));
+                        picinit(index-1);
+                    });
+                    $("#next").click(function(){
+                        var index=$(".piclist3 .num span").index($(".piclist3 .num span.on"));
+                        picinit(index+1);
+                    });
+
+                    $(".piclist3 .num span").click(function(){
+                        
+                        var index=$(".piclist3 .num span").index(this);
+                        picinit(index);    
+                    });
+                    </script>
+                <div class="buylayer2">
+                <p>
+                请电话联系工作室人员<br /><br />
+                工作室银行账户汇款信息：<br />
+                招商银行东五环支行：6225354545662<br />
+                账户名称：阿拉贡内斯<br /><br />
+                联系电话：58736512<br /><br />
+                地址：北京市朝阳区百子湾路32号苹果社区北区3A1008            
+                </p>
+                <span class="buyclose">关闭</span>
+                </div>
+            </div>
+            <div class="main_b">
+                <ul class="nav_bg">
+                    <li class="no1"></li>
+                    <li class="no2"></li>
+                    <li class="no3"></li>
+                    <li class="no4"></li>
+                    <li class="no5 on"></li>
+                </ul>
+            </div>
+            <div class="buy"></div>
+        </div>
+        <ul class="nav">
+            <li><a href="../1.html">打印工坊</a></li>
+            <li><a href="../2.html">扫描工坊</a></li>
+            <li><a href="../3.html">高仿复制</a></li>
+            <li><a href="../4.html">培训课程</a></li>
+            <li><a href="../5.html">艺术书籍</a></li>
+        </ul>
+        <div class="footer">&copy; 2008 Shao Jian Imaging Studio</div>
+    </div>
+    <div class="wrap_bg"><img src="images/bg.jpg" class="img" /><div class="layer"></div></div>
+</div>
+</body>
+</html>
