@@ -95,7 +95,12 @@ $(".next").click(function(){
 		$("#p0,#p1,#p2,#p3").hide();
 		$("#p0").show();
 	}
-
+	//设置左侧背景随机选择
+	var length = $("#bgimgs img").length;
+	if(length > 0){
+		var index = rnd(0, length)
+		$("#bgimg").attr("src", $("#bgimgs img").eq(index).attr("src"));
+	}
 });
 
 $(".pxkc p a").click(function(){
@@ -117,7 +122,12 @@ $(".buy").click(function(){
 	$(".buylayer2").show();
 });
 
-
+/**
+ * 产生随机整数
+ */
+function rnd(start, end){
+    return Math.floor(Math.random() * (end - start) + start);
+}
 
 /**
  * 点击弹出弹窗
@@ -128,6 +138,15 @@ $(".bgc").click(function(){
 		$("#bgcbox").hide();
 	});
 });
+
+/**
+ * 点击logo回首页
+ */
+$(".logo").click(function(){
+	window.location="/index.html";
+});
+
+
 
 
 
