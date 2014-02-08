@@ -51,8 +51,8 @@ b.rtop b.r4, b.rbottom b.r4{margin: 0 1px;height: 2px}
 .wrap .wrap_c .main .main_b .nav_bg li.on{ height:8px; border-bottom:2px solid #fff;}
 
 .wrap .wrap_c .nav{ height:40px; line-height:40px; width:956px;}
-.wrap .wrap_c .nav li{ float:left; display:inline-block; width:20%; text-align:center; font-size:15px; font-weight:bold;}
-.wrap .wrap_c .nav li a{}
+.wrap .wrap_c .nav li{ float:left; display:inline-block; width:20%; text-align:center; font-size:15px; font-weight:500;}
+.wrap .wrap_c .nav li a{font-family:"宋体"}
 .wrap .wrap_c .footer{ text-align:right; color:#fff; font-size:12px; height:20px; line-height:20px; margin-top:20px;}
 
 
@@ -94,7 +94,6 @@ b.rtop b.r4, b.rbottom b.r4{margin: 0 1px;height: 2px}
 .wrap .wrap_c .main .content .content_r2 .p4{ margin-top:50px;}
 
 .wrap .wrap_c .main .content .content_r3{ width:673px; float:left; height:auto;  position:relative;}
-
 .wrap .wrap_c .main .content .content_r3 p{ font-family:"宋体"; font-size:12px; line-height:18px; color:#50666E; padding:0 60px;letter-spacing:6px;}
 .wrap .wrap_c .main .content .content_r3 .p1{ margin-top:80px;}
 .wrap .wrap_c .main .content .content_r3 .p2{ margin-top:80px;}
@@ -185,9 +184,7 @@ b.rtop b.r4, b.rbottom b.r4{margin: 0 1px;height: 2px}
 .piclist3 .picpn2 #prev{ width:47px; height:82px; position:absolute; top:204px; left:135px;background:url(../images/bg.gif) no-repeat 0 -127px; text-indent:-9999px; display:block !important;}
 .piclist3 .picpn2 #next{ width:50px; height:86px; position:absolute; top:204px; right:139px;background:url(../images/bg.gif) no-repeat -56px -126px; text-indent:-9999px;display:block !important;}
 
-.wrap .wrap_c .main .buylayer2{ position:absolute; width:332px; height:222px; margin:-123px 0 0 -166px; z-index:999; left:50%; top:50%; 
-
-background:#CACACA;filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#88CACACA,endcolorstr=#88CACACA,gradientType=0);
+.wrap .wrap_c .main .buylayer2{ position:absolute; width:332px; height:222px; margin:-123px 0 0 -166px; z-index:999; left:50%; top:50%; background:#CACACA;filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#88CACACA,endcolorstr=#88CACACA,gradientType=0);
 background: -moz-linear-gradient(top, rgba(202,202,202,0.7), rgba(202,202,202,0.7));background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(202,202,202,0.7)), to(rgba(202,202,202,0.7)));
  text-align:center; display:none;}
  .wrap .wrap_c .main .mtop{margin:-133px 0 0 -166px !important;}
@@ -195,12 +192,12 @@ background: -moz-linear-gradient(top, rgba(202,202,202,0.7), rgba(202,202,202,0.
 .wrap .wrap_c .main .buylayer2 p{margin-top:20px; padding:0 55px !important; letter-spacing:0 !important; text-align:left; line-height:18px !important; color:#666; font-size:10px;}
 .wrap .wrap_c .main .buylayer2 .buyclose{color:#fff;  position:absolute; top:15px; right:20px; cursor:pointer; font-size:10px;color:#666;}
 
-.wrap .bgcbox{ display:none; width:673px; height:453px; overflow:hidden; position:absolute; left:0; top:0;background:#ffffff;background:none\9;filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#88ffffff,endcolorstr=#88ffffff,gradientType=0);
-background: -moz-linear-gradient(top, rgba(255,255,255,0.7), rgba(255,255,255,1));background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,0.7)), to(rgba(255,255,255,1)));}
-.wrap .bgcbox table{ text-align:center; font-size:12px;}
-.wrap .bgcbox table tr th{ height:70px; background-color:#C8C2B6; color:#54605F;}
+.wrap .bgcbox{ display:none; height:453px; width:956px; overflow:hidden; position:absolute; left:0; top:0;z-index:2099; background:#ffffff;background:none;filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#88ffffff,endcolorstr=#88ffffff,gradientType=0);
+background: -moz-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,1));background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,1)));}
+.wrap .bgcbox table{ text-align:center; font-size:12px; width:100%}
+.wrap .bgcbox table tr th{ height:70px; background-color:#C8C2B6; color:#50656D;}
 .wrap .bgcbox table tr td{ color:#50656D;}
-.wrap .bgcbox table tr td.t1{ background-color:#BEBEC0; height:28px; line-height:28px; color:#2d2d2d;}
+.wrap .bgcbox table tr td.t1{ background-color:#BEBEC0; height:28px; line-height:28px; color:#50656D;}
 .wrap .bgcbox table tr .bttom{ background-color:#E2E2E2; color:#54605F; height:48px; line-height:48px;}
 .wrap .bgcbox .buyclose{color:#fff;  position:absolute; top:15px; right:20px; cursor:pointer; font-size:10px;color:#666; position:absolute; right:3px; top:3px;}
 

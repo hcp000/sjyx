@@ -5,9 +5,10 @@ $(function(){
 	var timer = null;
 	var aSort = [];
 	var aPosition = [
-					{width:322,height:226,top:111,left:306,zIndex:10},
+					//{width:322,height:226,top:111,left:306,zIndex:10},
+					{width:357,height:261,top:97,left:306,zIndex:10},
 					{width:233,height:164,top:148,left:197,zIndex:8},
-					{width:193,height:136,top:164,left:90,zIndex:6},			
+					{width:193,height:136,top:164,left:90,zIndex:6},
 					{width:193,height:136,top:164,left:677,zIndex:6},
 					{width:233,height:164,top:148,left:527,zIndex:8}
 		]
@@ -103,7 +104,7 @@ function doMove(obj, json, fnEnd){
 	}
 	if(bStop){
 		clearInterval(obj.timer);
-		obj.timer = null;		
+		obj.timer = null;
 		if(fnEnd)fnEnd();
 	}
 }
