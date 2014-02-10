@@ -7,9 +7,13 @@
 <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
 <script type="text/javascript" src="../js/piclist.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    booklist.init();
+});
+</script>
 </head>
 <body>
-
 <div class="wrap">
     <div class="wrap_t">
         <div class="wrap_line"></div>
@@ -38,64 +42,6 @@
                         <span id="prev">上一页</span><p class="num"></p><span id="next">下一页</span>
                     </div>
                 </div>
-                <script type="text/javascript">
-                    var num="";
-                    var pics = [];    
-                    pics[0] = "img/browse/1.jpg";
-                    pics[1] = "img/browse/2.jpg"; 
-                    pics[2] = "img/browse/3.jpg"; 
-                    pics[3] = "img/browse/4.jpg";
-                    pics[4] = "img/browse/5.jpg";
-                    var title = []; 
-                    title[0]="说服对方"; 
-                    title[1]="第三方";  
-                    title[2]="东方红"; 
-                    title[3]="电风扇而";  
-                    title[4]="个头儿哥恶搞";  
-
-                    function picinit(e){
-                        $("#pic").attr("src",pics[e]);
-                        $("#titles").html(title[e]);
-                        $(".piclist3 .num span").removeClass("on");
-                        $(".piclist3 .num span").eq(e).addClass("on");
-                        $("#prev,#next").show();
-                        if(e==0)
-                        {
-                            
-                            $("#prev").hide();
-                        }
-                        if(e==pics.length-1)
-                        {
-                            
-                            $("#next").hide();    
-                        }
-
-                    }
-
-                    for (i=0;i<pics.length;i=i+1) 
-                    {
-                        var j=i+1;
-                        num=$(".piclist3 .num").html()+"<span>"+j+"</span>";
-                       $(".piclist3 .num").html(num);
-                    }
-
-                    picinit(0);    
-                                            
-                    $("#prev").click(function(){
-                        var index=$(".piclist3 .num span").index($(".piclist3 .num span.on"));
-                        picinit(index-1);
-                    });
-                    $("#next").click(function(){
-                        var index=$(".piclist3 .num span").index($(".piclist3 .num span.on"));
-                        picinit(index+1);
-                    });
-
-                    $(".piclist3 .num span").click(function(){
-                        
-                        var index=$(".piclist3 .num span").index(this);
-                        picinit(index);    
-                    });
-                    </script>
                 <div class="buylayer2">
                 <p>
                 请电话联系工作室人员<br /><br />
@@ -137,5 +83,14 @@
     </div>
     <div class="wrap_bg"><img src="../images/bg.jpg" class="img" /><div class="layer"></div></div>
 </div>
+
+<!-- 书籍的设置 -->
+<div id="books" style="display:none">
+<img src="img/browse/1.jpg" name="1" />
+<img src="img/browse/2.jpg" name="2" />
+<img src="img/browse/3.jpg" name="3" />
+<img src="img/browse/4.jpg" name="4" />
+</div>
+
 </body>
 </html>

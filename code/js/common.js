@@ -146,23 +146,54 @@ $(".logo").click(function(){
 	window.location="/index.html";
 });
 
-
-
-
-
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var booklist = {
+	pics:[],
+	num:0,
+	title:[],
+	picinit: function(index){
+		var self = this;
+		$("#pic").attr("src",self.pics[index]);
+		$("#titles").html(self.title[index]);
+		$(".piclist3 .num span").removeClass("on");
+		$(".piclist3 .num span").eq(index).addClass("on");
+		$("#prev,#next").show();
+		
+		if(index==0){
+			$("#prev").hide();
+		}
+		
+		if(index==self.pics.length-1){
+			$("#next").hide();
+		}
+	},
+	init: function(){
+		var self = this;
+		
+		$("#books img").each(function(i,e){
+			self.pics[i]=$(this).attr("src");
+			self.title[i]=$(this).attr("name");
+		})
+		
+		for (i=0; i < self.pics.length; i=i+1) {
+			var j=i+1;
+			var num=$(".piclist3 .num").html()+"<span>"+j+"</span>";
+			$(".piclist3 .num").html(num);
+		}
+		self.picinit(0);
+		
+		$("#prev").click(function(){
+			var index=$(".piclist3 .num span").index($(".piclist3 .num span.on"));
+			self.picinit(index-1);
+		});
+		$("#next").click(function(){
+			var index=$(".piclist3 .num span").index($(".piclist3 .num span.on"));
+			self.picinit(index+1);
+		});
+		$(".piclist3 .num span").click(function(){
+			var index=$(".piclist3 .num span").index(this);
+			self.picinit(index);
+		});
+	}
+}
