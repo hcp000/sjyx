@@ -34,14 +34,16 @@ $(document).ready(function(){
                     <img src="img/bg1.jpg" />
                     <p>绍剑影像工作室为专业摄影师，画家以及视觉艺术家提供高端收藏级和展览级艺术微喷打印服务，优良的打印工艺使艺术家们可以更有效的展示和销售他们的作品。</p>
                 </div>
-                <div class="piclist3" id="p1">
-                    <div class="pic"><img id="pic" src="" /></div>
-                    <div class="buy"></div>    
-                    <h2 id="titles"></h2>
-                    <div class="picpn picpn2">
-                        <span id="prev">上一页</span><p class="num"></p><span id="next">下一页</span>
+                <div class="piclist" id="p1" style="display:none;">
+                    <div id="list">
+                        <ul></ul>
+                        <div class="buy"></div>
+                        <div class="picpn2">
+                            <span id="prev">上一页</span><p class="num"></p><span id="next">下一页</span>
+                        </div>
                     </div>
                 </div>
+                
                 <div class="buylayer2">
                 <p>
                 请电话联系工作室人员<br /><br />
@@ -51,7 +53,7 @@ $(document).ready(function(){
                 联系电话：58736512<br /><br />
                 地址：北京市朝阳区百子湾路32号苹果社区北区3A1008            
                 </p>
-                <span class="buyclose">关闭</span>
+                <span class="buyclose">Ｘ</span>
                 </div>
             </div>
             <div class="main_b">
@@ -84,12 +86,52 @@ $(document).ready(function(){
     <div class="wrap_bg"><img src="../images/bg.jpg" class="img" /><div class="layer"></div></div>
 </div>
 
-<!-- 书籍的设置 -->
+<!-- 书籍的设置，包括连接，封面，书名 -->
 <div id="books" style="display:none">
-<img src="img/browse/1.jpg" name="1" />
-<img src="img/browse/2.jpg" name="2" />
-<img src="img/browse/3.jpg" name="3" />
-<img src="img/browse/4.jpg" name="4" />
+<div>
+    <title>1</title>
+    <href></href>
+    <list>
+        <img src="img/browse/1.jpg" />
+        <img src="img/browse/2.jpg" />
+        <img src="img/browse/3.jpg" />
+        <img src="img/browse/4.jpg" />
+        <img src="img/browse/5.jpg" />
+    </list>
+</div>
+<div>
+    <title>2</title>
+    <href></href>
+    <list>
+        <img src="img/browse/1.jpg" />
+        <img src="img/browse/2.jpg" />
+        <img src="img/browse/3.jpg" />
+        <img src="img/browse/4.jpg" />
+        <img src="img/browse/5.jpg" />
+    </list>
+</div>
+<div>
+    <title>3</title>
+    <href></href>
+    <list>
+        <img src="img/browse/1.jpg" />
+        <img src="img/browse/2.jpg" />
+        <img src="img/browse/3.jpg" />
+        <img src="img/browse/4.jpg" />
+        <img src="img/browse/5.jpg" />
+    </list>
+</div>
+<div>
+    <title>4</title>
+    <href></href>
+    <list>
+        <img src="img/browse/1.jpg" />
+        <img src="img/browse/2.jpg" />
+        <img src="img/browse/3.jpg" />
+        <img src="img/browse/4.jpg" />
+        <img src="img/browse/5.jpg" />
+    </list>
+</div>
 </div>
 
 </body>

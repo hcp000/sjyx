@@ -32,16 +32,12 @@ wrap.init();
 wrap.addFlash();
 $(window).resize(function(){
 	wrap.init();
-});	
-	
+});
 
 $(".switch li").hover(function(){
 	$(this).find("img").fadeIn("slow");
-	
-	},function(){
-	
+},function(){
 	$(this).find("img").fadeOut("slow");
-	
 });
 
 var imgindex=Math.floor(Math.random()*($(".switch2 li#no1 img").length));
@@ -52,7 +48,6 @@ var switch2=[];
 for(i=0;i<=$(".switch2 li.no").length;i++){
 	switch2[i]=$(".switch2 li.no").eq(i).html();
 }
-
 
 $(".switch2 li").mouseover(function(){
 	var hindex=$(".switch2 li").index(this);
@@ -149,51 +144,33 @@ $(".logo").click(function(){
 });
 
 var booklist = {
-	pics:[],
-	num:0,
-	title:[],
+	books:null,
 	picinit: function(index){
 		var self = this;
-		$("#pic").attr("src",self.pics[index]);
-		$("#titles").html(self.title[index]);
-		$(".piclist3 .num span").removeClass("on");
-		$(".piclist3 .num span").eq(index).addClass("on");
-		$("#prev,#next").show();
-		
-		if(index==0){
-			$("#prev").hide();
-		}
-		
-		if(index==self.pics.length-1){
-			$("#next").hide();
-		}
+		var html="";
+		self.books.eq(index).find("list img").each(function(){
+			html+="<li><img src=\""+$(this).attr("src")+"\" /><div></div></li>"
+		});
+		$(".piclist #list ul").html(html);
+		$(".piclist #list .picpn2 .num").attr("index", index).html(self.books.eq(index).find("title").text());
+		piclist.init($(".piclist #list ul li"));
 	},
 	init: function(){
 		var self = this;
-		
-		$("#books img").each(function(i,e){
-			self.pics[i]=$(this).attr("src");
-			self.title[i]=$(this).attr("name");
-		})
-		
-		for (i=0; i < self.pics.length; i=i+1) {
-			var j=i+1;
-			var num=$(".piclist3 .num").html()+"<span>"+j+"</span>";
-			$(".piclist3 .num").html(num);
-		}
+		self.books  = $("#books div");
 		self.picinit(0);
 		
 		$("#prev").click(function(){
-			var index=$(".piclist3 .num span").index($(".piclist3 .num span.on"));
-			self.picinit(index-1);
+			var index = Number($(".piclist #list .picpn2 .num").attr("index"));
+			if (index > 0){
+				self.picinit(index-1);
+			}
 		});
 		$("#next").click(function(){
-			var index=$(".piclist3 .num span").index($(".piclist3 .num span.on"));
-			self.picinit(index+1);
-		});
-		$(".piclist3 .num span").click(function(){
-			var index=$(".piclist3 .num span").index(this);
-			self.picinit(index);
+			var index = Number($(".piclist #list .picpn2 .num").attr("index"));
+			if (index < self.books.length-1){
+				self.picinit(index+1);
+			}
 		});
 	}
 }
