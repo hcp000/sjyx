@@ -143,6 +143,9 @@ $(".logo").click(function(){
 
 });
 
+/**
+ * 图书浏览
+ */
 var booklist = {
 	books:null,
 	picinit: function(index){
@@ -173,4 +176,34 @@ var booklist = {
 			}
 		});
 	}
-}
+};
+
+/**
+ * 图片浏览
+ */
+var imgbrowse = {
+	browseimgs:null,
+	browseimg: function(index){
+		var self = this;
+		$("#pic").attr("src", self.browseimgs.eq(index).find("img").attr("src"));
+		$(".piclist3 .picpn2 .num").attr("index", index);
+	},
+	init: function(){
+		var self = this;
+		self.browseimgs  = $("#browseimgs div");
+		self.browseimg(0);
+		
+		$("#prev").click(function(){
+			var index = Number($(".piclist3 .picpn2 .num").attr("index"));
+			if (index > 0){
+				self.browseimg(index-1);
+			}
+		});
+		$("#next").click(function(){
+			var index = Number($(".piclist3 .picpn2 .num").attr("index"));
+			if (index < self.browseimgs.length-1){
+				self.browseimg(index+1);
+			}
+		});
+	}
+};
