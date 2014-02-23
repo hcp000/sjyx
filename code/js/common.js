@@ -113,8 +113,9 @@ $(".buylayer2 .buyclose").click(function(){
 	$(".buylayer2").hide();
 });
 
-$(".buy").click(function(){
+$("#buy").bind("click", function(){
 	$(".buylayer2").show();
+	return false;
 });
 
 /**
@@ -186,6 +187,8 @@ var imgbrowse = {
 	browseimg: function(index){
 		var self = this;
 		$("#pic").attr("src", self.browseimgs.eq(index).find("img").attr("src"));
+		var picdesc="<a href='"+self.browseimgs.eq(index).find("href").text()+"' target='_blank'>"+self.browseimgs.eq(index).find("title").text()+"</a>";
+		$("#picdesc").html(picdesc)
 		$(".piclist3 .picpn2 .num").attr("index", index);
 	},
 	init: function(){
