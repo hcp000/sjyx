@@ -192,13 +192,6 @@ b.rtop b.r4, b.rbottom b.r4{margin: 0 1px;height: 2px}
 .piclist3 .picpn2 #prev{ width:50px; height:86px; position:absolute; top:180px; left:40px;background:url(../images/bg.gif) no-repeat 0 -127px; text-indent:-9999px; display:block !important;}
 .piclist3 .picpn2 #next{ width:50px; height:86px; position:absolute; top:180px; right:40px;background:url(../images/bg.gif) no-repeat -56px -126px; text-indent:-9999px;display:block !important;}
 
-/*.wrap .wrap_c .main .buylayer2{ position:absolute; width:357px; height:261px; margin:-129px 0 0 -172px; z-index:999; left:50%; top:50%; background:#CACACA;filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#88CACACA,endcolorstr=#88CACACA,gradientType=0); background: -moz-linear-gradient(top, rgba(202,202,202,0.8), rgba(202,202,202,0.8));background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(202,202,202,0.8)), to(rgba(202,202,202,0.8))); text-align:center; display:none;}
-*/
-.wrap .wrap_c .main .buylayer2{ position:absolute; width:357px; height:261px; margin:-129px 0 0 -172px; z-index:999; left:50%; top:50%; background:#CACACA;filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#88CACACA,endcolorstr=#88CACACA,gradientType=0); background: -moz-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0.8));background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0.8))); text-align:center; display:none;}
-.wrap .wrap_c .main .mtop{margin:-133px 0 0 -166px !important;}
-
-.wrap .wrap_c .main .buylayer2 p{margin-top:45px; padding:0 55px !important; letter-spacing:0 !important; text-align:left; line-height:18px !important; color:#666; font-size:12px;}
-
 .piclist4{width:956px;height:453px;position:absolute;top:0;left:0; z-index:999; background-color:#D3D3CB;}
 .piclist4 .pic{ text-align:center;  padding-bottom:15px; overflow:hidden; margin:85px auto 0 auto;}
 .piclist4 .pic img{ margin:0 auto; display:block; height:100%; max-height:280px; max-width:700px;}
@@ -218,13 +211,21 @@ b.rtop b.r4, b.rbottom b.r4{margin: 0 1px;height: 2px}
 background: -moz-linear-gradient(top, rgba(202,202,202,0.7), rgba(202,202,202,0.7));background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(202,202,202,0.7)), to(rgba(202,202,202,0.7)));
  text-align:center; display:none;}
 */
- .wrap .wrap_c .main .buylayer2{ position:absolute; width:357px; height:262px; margin:-130px 0 0 -172px; z-index:999; left:50%; top:50%; background:#CACACA;filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#88CACACA,endcolorstr=#88CACACA,gradientType=0);
+.wrap .wrap_c .main .buylayer2{ position:absolute; width:357px; height:262px; margin:-130px 0 0 -172px; z-index:999; left:50%; top:50%; background:#CACACA;filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#88CACACA,endcolorstr=#88CACACA,gradientType=0);
 background: -moz-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0.9));background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0.9)));
  text-align:center; display:none;}
- .wrap .wrap_c .main .mtop{margin:-133px 0 0 -166px !important;}
-
 .wrap .wrap_c .main .buylayer2 p{margin-top:40px; padding:0 55px !important; letter-spacing:0 !important; text-align:left; line-height:18px !important; color:#666; font-size:10px;}
 .wrap .wrap_c .main .buylayer2 .buyclose{color:#fff;  position:absolute; top:20px; right:20px; cursor:pointer; font-size:18px;color:#666;}
+
+
+#buylayer2{ position:absolute; width:357px; height:262px; margin:-130px 0 0 -172px; z-index:999; left:50%; top:50%; background:#CACACA;filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#88CACACA,endcolorstr=#88CACACA,gradientType=0);
+background: -moz-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0.9));background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0.9)));
+ text-align:center; display:none;}
+#buylayer2 .img{margin-top:40px;padding-left:50px}
+#buylayer2 .img, #buylayer2 .img a img{width:250px; height:120px;}
+#buylayer2 p{padding:0 55px !important; letter-spacing:0 !important; text-align:center; line-height:18px !important; color:#666; font-size:10px;}
+#buylayer2 .buyclose{color:#fff;  position:absolute; top:20px; right:20px; cursor:pointer; font-size:18px;color:#666;}
+
 
 .wrap .bgcbox{ display:none; height:453px; width:956px; overflow:hidden; position:absolute; left:0; top:0;z-index:2099; background:#ffffff;background:none;filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#88ffffff,endcolorstr=#88ffffff,gradientType=0);
 background: -moz-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,1));background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,1)));}

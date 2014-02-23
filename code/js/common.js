@@ -118,6 +118,24 @@ $("#buy").bind("click", function(){
 	return false;
 });
 
+$("#contact").bind("click", function(){
+	if( $("#buylayer2").length < 1 ){
+		var html='<div id="buylayer2">'
+					+'<div class="img"><a href="http://ditu.google.cn/" target="_blank"><img src="/images/ditu.jpg"></a></div>'
+					+'<p>绍剑影像工作室</p>'
+					+'<p>地址：北京市朝阳区百子湾路32号苹果社区北区3A_1008室</p>'
+					+'<p>电话：58736512</p>'
+					+'<p>Email：58736512</p>'
+					+'<span class="buyclose">×</span>'
+					+'</div>';
+		$(html).appendTo("body").show().find(".buyclose").bind("click", function(){
+			$("#buylayer2").hide();
+		});
+	}else{
+		$("#buylayer2").show();
+	}
+});
+
 /**
  * 产生随机整数
  */
